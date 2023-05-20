@@ -53,7 +53,7 @@ export default function Home() {
           </Button>
         </Link>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{ marginTop: "1rem" }}>
         <span className="faded faded-all">
           <img src={HeroImage} alt="bored dog" style={{ width: "100%" }}></img>
         </span>

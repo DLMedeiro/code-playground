@@ -19,9 +19,6 @@ export default function Navbar() {
   function loggedOut() {
     return (
       <ul className="nav justify-content-center">
-        <Button href="/" color="inherit">
-          Home
-        </Button>
         <Button href="/login" color="inherit">
           Login
           {/* LoginForm */}
@@ -47,9 +44,6 @@ export default function Navbar() {
   function loggedIn() {
     return (
       <ul className="nav justify-content-center">
-        <Button href="/" color="inherit">
-          Home
-        </Button>
         <Button href="/profile" color="inherit">
           Profile
         </Button>
@@ -73,7 +67,12 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+            align="left"
+          >
             Time Warp Playhouse
           </Typography>
           {isLoggedIn === true ? loggedIn() : loggedOut()}

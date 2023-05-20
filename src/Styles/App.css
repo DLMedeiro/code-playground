@@ -1,5 +1,8 @@
 
+body{
+  overflow: hidden;
 
+}
 .App {
   text-align: center;
   background-color: #f7d329;
