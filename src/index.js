@@ -3,18 +3,41 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#000",
+      light: "#ed008e",
+      dark: "#f8de2c",
+    },
+    secondary: {
+      dark: "#e8b29e",
+      light: "#f8de2c",
+      main: "#cb99d5",
+    },
+    info: {
+      main: "#e8b29e",
+      light: "#e1def1",
+      dark: "#cb99d5",
+    },
+  },
+});
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>
+  <ThemeProvider theme={theme}>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
