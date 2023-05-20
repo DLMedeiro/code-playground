@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import "../Styles/imageFade.scss";
+import Carousel from "./Carousel";
 
 import HeroImage from "../images/pexels-stas-knop-3283142 (1).jpg";
 import axios from "axios";
@@ -22,6 +23,9 @@ export default function Home() {
         justifyContent: "center",
       }}
     >
+      <Grid>
+        <Carousel />
+      </Grid>
       <Grid item xs={12} sx={{ fontSize: "2rem" }}>
         <h1>Looking for Motivation?</h1>
         <p>Start tracking your progress and reaching your goals today!</p>
