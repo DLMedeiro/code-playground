@@ -1,3 +1,11 @@
+Tests to incorporate: what happens when you log in, how long, what do you see if there is an error
+
+Create a dummy login / account
+
+optimize login / logout for navigation 
+
+
+
 # WAR Card Game
 
 [PLAY NOW!](https://warcardgame-frontend.onrender.com/)
