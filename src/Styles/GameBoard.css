@@ -1,0 +1,194 @@
+/* https://www.w3schools.com/howto/howto_css_three_columns.asp */
+.column {
+  /* float: left; */
+  width:33.3%;
+  padding: 0px;
+}
+.column-bottom{
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.middle{
+  margin-top: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 75px  75px 75px 75px;
+
+}
+
+.outer-container {
+    margin: 1rem;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+    padding: .5rem .5rem;
+    text-align: center;
+  }
+.inner-container {
+    display: inline-block;
+    padding: .5rem .5rem;
+    /* vertical-align: middle; */
+  }
+/* .push-left{
+  align-items: right;
+} */
+.inlineBlock {
+  display: inline-block;
+  /* margin-top: 10rem; */
+  padding: .5rem .5rem;
+}
+.inlineBlock-battle {
+  display: inline-block;
+}
+.stacked-outer-container{
+  display: inline-block;
+  padding: .5rem .5rem;
+  /* margin-top: 10rem; */
+}
+  .stacked{
+    display: block;
+  }
+
+  
+
+.deal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .deal:hover{
+    background-color: #347738; /* Green */
+  }
+
+
+.drawLeft{
+  margin-right: 5rem;
+}
+.drawRight{
+  margin-left: 5rem;
+}
+
+
+
+
+  /* Adjust for responsivness later */
+  .gameboard{
+    margin-right: 6%;
+    margin-left: 6%
+  }
+
+  .currentPlayer{
+    border: 2px solid rgba(131, 43, 43, 0.5);
+    border-radius: 25px;
+    padding: .5rem;
+    transition: 1s;
+  }
+  .currentPlayer h1 {
+    border-bottom: 2px solid rgba(131, 43, 43, 0.5);
+    padding-bottom: 2px;
+  }
+
+  .notCurrentPlayer{
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: .5rem;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(131, 43, 43, 0.2);
+    z-index: 2;
+  }
+
+  .notCurrentPlayer h1 {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+  }
+
+.flip-card-inner {
+  position: relative;
+  /* width: 100%;
+  height: 100%;
+  text-align: center; */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.form-input{
+  margin: 25px 250px 25px 250px;
+  padding: 25px 50px 25px 50px;
+}
+
+@media only screen and (max-width: 700px)  {
+  .form-input {
+    margin: 0px;
+  transition: 1s;
+}}
+@media only screen and (max-width: 450px)  {
+  .inlineBlock {
+    display: inline-block;
+    /* margin-top: 4rem; */
+    padding: .5rem .5rem;
+    transition: 1s;
+  }
+  
+  .currentPlayer{
+    border: 2px solid rgba(131, 43, 43, 0.5);
+    border-radius: 25px;
+    transition: 1s;
+  }
+  .modal-content{
+    width: 80%;
+    overflow:auto;
+    /* height: 100%; */
+    background-color: #fff;
+    /* overflow: hidden; */
+  }
+}
+
+
+

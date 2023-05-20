@@ -1,0 +1,165 @@
+button[type=submit]:disabled{
+    display: none;
+  }
+
+
+
+  /* Buttons */
+  
+  /* CSS 
+  https://getcssscan.com/css-buttons-examples*/
+  #btn-main {
+    margin: 25px 400px 25px 400px;
+    padding: 25px 50px 25px 50px;
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border: transparent 2px solid;
+}
+  #btn-login {
+    margin: 25px;
+    padding: 15px 50px 15px 50px;
+  /* display: block; */
+  background-color: #FFFFFF;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border: transparent 2px solid;
+}
+
+#btn-main:hover{
+  background-color: rgb(249,250,251);
+  border: var(--color1) 2px solid;
+}
+#btn-login:hover{
+  background-color: rgb(249,250,251);
+  border: var(--color1) 2px solid;
+}
+
+#btn-main:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+#btn-login:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#btn-login:focus-visible{
+  box-shadow: none;
+}
+#btn-main:focus-visible{
+  box-shadow: none;
+}
+.card-body{
+  max-width: 75%;
+  margin: auto;
+}
+
+/* Modal React Tutorial */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* text-align: left; */
+
+}
+
+.modal-content{
+  width: 50%;
+  overflow:auto;
+  color: black;
+  /* height: 100%; */
+  background-color: #fff;
+  /* overflow: hidden; */
+}
+
+.modal-header, .modal-footer{
+  padding: 10px;
+}
+
+.modal-title{
+  margin: 0;
+}
+
+.modal-body{
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+  /* margin: 25px 500px 25px 500px; */
+}
+
+.modal-footer{
+  margin: auto;
+}
+
+.instructions{
+  text-align: left;
+  max-width: 50%;
+  margin: auto;
+}
+
+
+
+@media only screen and (max-width: 1200px)  {
+  #btn-main {
+    margin: 25px 150px 25px 150px;
+    padding: 25px 50px 25px 50px;
+    transition: 1s;
+}}
+
+@media only screen and (max-width: 800px)  {
+  #btn-main {
+  margin: 12px;
+  transition: 1s;
+}
+.modal-content{
+  min-width: 300px;
+  transition: 1s;
+}
+.instructions{
+  max-width: 90%;
+  transition: 1s;
+}}
+@media only screen and (max-width: 450px)  {
+h1, h2, h3, h4, h5, h6{
+  font-size: medium;
+  padding: 8px 4px 8px 4px;
+  transition: 1s;
+}
+
+
+}
