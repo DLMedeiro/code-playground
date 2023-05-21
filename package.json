@@ -1,6 +1,6 @@
 {
-  "name": "code-playhouse",
-  "homepage": "https://dlmedeiro.github.io/code-playhouse",
+  "name": "code-playground",
+  "homepage": "https://dlmedeiro.github.io/code-playground",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
