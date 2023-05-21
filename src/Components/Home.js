@@ -34,15 +34,6 @@ export default function Home() {
         <ImageCarousel />
       </Grid>
 
-      {/* <Grid item xs={12}>
-        <span className="faded faded-all">
-          <img
-            src={HeroImage}
-            alt="colorful clock"
-            style={{ width: "100%" }}
-          ></img>
-        </span>
-      </Grid> */}
     </Grid>
   );
 }
