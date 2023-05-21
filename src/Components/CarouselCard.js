@@ -8,9 +8,11 @@ function CarouselCard(props) {
   return (
     <Grid container spacing={0}>
       <Grid item xs={5}>
-        <h4 className="Card-title">{props.name}</h4>
-        <p className="Card-title">{props.caption}</p>
-        <p>Technologies Used: {props.tech}</p>
+        <h2 className="Card-title">{props.name}</h2>
+        <h4 className="card-h4">Description</h4>
+        <p className="card-p">{props.caption}</p>
+        <h4 className="card-h4">Technologies</h4>
+        <p className="card-p"> {props.tech}</p>
       </Grid>
       <Grid item xs={7}>
         <img className="Card-image" src={props.src} alt={props.caption} />

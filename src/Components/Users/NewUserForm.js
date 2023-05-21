@@ -9,6 +9,8 @@ import {
   Button,
   FormGroup,
   Form,
+  Row,
+  Col,
 } from "reactstrap";
 import { registerUser } from "../../store/user-slice";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
@@ -66,72 +68,97 @@ function NewUserForm() {
 
   return (
     <section>
-      <Card>
+      <Card
+        style={{
+          borderColor: "#F18F01",
+          backgroundColor: "#E9E6E9",
+          background: "transparent",
+          margin: "5rem",
+          marginLeft: "10rem",
+          marginRight: "10rem",
+          paddingTop: "2rem",
+          color: "#4F3773",
+        }}
+      >
         <h1>Create New Account</h1>
         <CardBody className="text-center">
           {loading ? (
             <View style={[styles.container, styles.horizontal]}>
-              <ActivityIndicator size="large" color="#c19595" />
+              <ActivityIndicator size="large" color="#F18F01" />
             </View>
           ) : (
             ""
           )}
           <Form onSubmit={submit}>
-            <FormGroup>
-              <Label htmlFor="username">Username</Label>
-              <Input
-                id="username"
-                required="required"
-                type="text"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label htmlFor="password">Password</Label>
-              <Input
-                id="password"
-                required="required"
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label htmlFor="firstName">First Name</Label>
-              <Input
-                id="firstName"
-                required="required"
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label htmlFor="lastName">Last Name</Label>
-              <Input
-                id="lastName"
-                required="required"
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                required="required"
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </FormGroup>
+            <Row>
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="username">Username</Label>
+                  <Input
+                    id="username"
+                    required="required"
+                    type="text"
+                    name="username"
+                    value={formData.username}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </Col>
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    required="required"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="firstName">First Name</Label>
+                  <Input
+                    id="firstName"
+                    required="required"
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </Col>
+              <Col md={6}>
+                <FormGroup>
+                  <Label htmlFor="lastName">Last Name</Label>
+                  <Input
+                    id="lastName"
+                    required="required"
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </Col>
+            </Row>
+            <Row>
+              <FormGroup>
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  id="password"
+                  required="required"
+                  type="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                />
+              </FormGroup>
+            </Row>
 
             <Button id="btn-login" className="btn btn-primary btn-lg btn-block">
               Create Account

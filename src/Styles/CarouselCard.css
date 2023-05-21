@@ -12,6 +12,18 @@
   .Card-title {
     margin: 0 0 0.5em 0;
   }
+
+  .card-p{
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .card-h4{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    text-align: left;
+
+  }
   
   .Card-small {
     margin-top: 0.5em;
