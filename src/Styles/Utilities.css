@@ -1,8 +1,14 @@
+
 button[type=submit]:disabled{
     display: none;
   }
 
+/* Form */
 
+.form-control:focus{
+  border-color: #F18F01 !important;
+  box-shadow: 0 0 0 0.05rem #F18F01 !important;
+}
 
   /* Buttons */
   
@@ -33,11 +39,11 @@ button[type=submit]:disabled{
     margin: 25px;
     padding: 15px 50px 15px 50px;
   /* display: block; */
-  background-color: #FFFFFF;
+  background-color: #E9E6E9;
   border-radius: .5rem;
   box-sizing: border-box;
-  color: #111827;
-  font-size: .875rem;
+  color: #F18F01;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.25rem;
   text-align: center;
@@ -48,7 +54,7 @@ button[type=submit]:disabled{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  border: transparent 2px solid;
+  border: #F18F01 2px solid;
 }
 
 #btn-main:hover{
@@ -56,8 +62,9 @@ button[type=submit]:disabled{
   border: var(--color1) 2px solid;
 }
 #btn-login:hover{
-  background-color: rgb(249,250,251);
-  border: var(--color1) 2px solid;
+  color: #E9E6E9;
+  border: var(#F18F01) 2px solid;
+  background-color: #F18F01;
 }
 
 #btn-main:focus{

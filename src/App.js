@@ -3,7 +3,7 @@ import "./Styles/App.css";
 // import "./Styles/index.css";
 // import "./Styles/Navbar.css";
 // import "./Styles/Toast.css";
-// import "./Styles/Utilities.css";
+import "./Styles/Utilities.css";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";

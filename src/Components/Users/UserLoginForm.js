@@ -13,6 +13,9 @@ import {
   Form,
 } from "reactstrap";
 
+// outline in orange
+// background offwhite
+
 const UserLoginForm = () => {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -66,12 +69,23 @@ const UserLoginForm = () => {
 
   return (
     <section>
-      <Card>
+      <Card
+        style={{
+          borderColor: "#F18F01",
+          backgroundColor: "#E9E6E9",
+          background: "transparent",
+          margin: "5rem",
+          marginLeft: "15rem",
+          marginRight: "15rem",
+          padding: "3rem",
+          color: "#4F3773",
+        }}
+      >
         <h1>Login</h1>
         <CardBody className="text-center">
           {loading ? (
             <View style={[styles.container, styles.horizontal]}>
-              <ActivityIndicator size="large" color="#c19595" />
+              <ActivityIndicator size="large" color="#F18F01" />
             </View>
           ) : (
             ""
@@ -103,6 +117,24 @@ const UserLoginForm = () => {
               id="btn-login"
               className="btn btn-lg btn-block"
               type="submit"
+              // sx={{
+              //   mr: 2,
+              //   backgroundColor: "#E9E6E9",
+              //   borderColor: "#F18F01",
+              //   "&:hover": {
+              //     borderColor: "#F18F01",
+              //     color: "#F18F01",
+              //   },
+              // }}
+              // style={{
+              //   backgroundColor: "#E9E6E9",
+              //   borderColor: "#F18F01",
+              //   color: "#F18F01",
+              //   "&:hover": {
+              //     borderColor: "#F18F01",
+              //     color: "#E9E6E9",
+              //   },
+              // }}
             >
               LogIn
             </Button>
