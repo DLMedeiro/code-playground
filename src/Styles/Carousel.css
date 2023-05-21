@@ -1,4 +1,23 @@
-.splide__slide img {
-    width: 100%;
-    height: auto;
-  }
+.Carousel-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.Carousel-main > i {
+  cursor: pointer;
+  margin: 1rem;
+
+  color: #31edfd;
+
+}
+
+.Carousel-main > i.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Carousel-main > i:hover {
+  color: #ff26c3;
+}

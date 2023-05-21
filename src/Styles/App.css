@@ -1,11 +1,15 @@
 
 body{
+  background: url('../images/pexels-alexander-grey-1212407.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
 
 }
 .App {
   text-align: center;
-  background-color: #f7d329;
 
   /* max-width: 50rem; */
 }

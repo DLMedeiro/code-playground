@@ -19,11 +19,43 @@ export default function Navbar() {
   function loggedOut() {
     return (
       <ul className="nav justify-content-center">
-        <Button href="/login" color="inherit">
+        <Button
+          href="/login"
+          // color="inherit"
+          variant="contained"
+          sx={{
+            mt: 3,
+            mb: 2,
+            borderRadius: "40px",
+            margin: "0 auto",
+            "&:hover": {
+              backgroundColor: "#31edfd",
+              borderColor: "#31edfd",
+              boxShadow: "none",
+              color: "#6d0173",
+            },
+          }}
+        >
           Login
           {/* LoginForm */}
         </Button>
-        <Button href="/signup" color="inherit">
+        <Button
+          href="/signup"
+          variant="contained"
+          sx={{
+            mt: 3,
+            mb: 2,
+            borderRadius: "40px",
+            margin: "0 auto",
+            marginLeft: "20px",
+            "&:hover": {
+              backgroundColor: "#31edfd",
+              borderColor: "#31edfd",
+              boxShadow: "none",
+              color: "#6d0173",
+            },
+          }}
+        >
           Create Account
         </Button>
       </ul>
@@ -47,7 +79,24 @@ export default function Navbar() {
         <Button href="/profile" color="inherit">
           Profile
         </Button>
-        <Button onClick={logout} href="/" color="inherit">
+        <Button
+          onClick={logout}
+          href="/"
+          color="inherit"
+          variant="contained"
+          sx={{
+            mt: 3,
+            mb: 2,
+            borderRadius: "40px",
+            margin: "0 auto",
+            "&:hover": {
+              backgroundColor: "#31edfd",
+              borderColor: "#31edfd",
+              boxShadow: "none",
+              color: "#6d0173",
+            },
+          }}
+        >
           Log Out
         </Button>
       </ul>
@@ -56,7 +105,13 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        style={{
+          backgroundColor: "rgba(52, 0, 196, .9)",
+          color: "white",
+        }}
+      >
         <Toolbar>
           {/* <IconButton
             size="large"
@@ -73,7 +128,7 @@ export default function Navbar() {
             sx={{ flexGrow: 1 }}
             align="left"
           >
-            Time Warp Playhouse
+            CodePlayground
           </Typography>
           {isLoggedIn === true ? loggedIn() : loggedOut()}
         </Toolbar>

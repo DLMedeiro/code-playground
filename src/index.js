@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 // Redux
 import { Provider } from "react-redux";
@@ -12,19 +13,9 @@ import store from "./store";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#000",
+      main: "#ff26c3",
       light: "#adeb32",
       dark: "#ea0088",
-    },
-    secondary: {
-      dark: "#e8b29e",
-      light: "#ea0088",
-      main: "#cb99d5",
-    },
-    info: {
-      main: "#e8b29e",
-      light: "#e1def1",
-      dark: "#cb99d5",
     },
   },
 });
