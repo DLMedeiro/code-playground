@@ -23,11 +23,18 @@ function ImageCarousel(props) {
     <div className="Carousel">
       <h1 style={{ margin: "2rem" }}>{props.title}</h1>
       <div className="Carousel-main">
-        <i
-          className={hideLeft ? "null" : "fas fa-chevron-circle-left fa-2x"}
-          onClick={goBackward}
-          data-testid="left-arrow"
-        />
+        {hideLeft ? (
+          <i
+            style={{ color: "transparent", pointerEvents: "none" }}
+            className="fas fa-chevron-circle-left fa-2x"
+          />
+        ) : (
+          <i
+            className="fas fa-chevron-circle-left fa-2x"
+            onClick={goBackward}
+            data-testid="right-arrow"
+          />
+        )}
         <Card
           name={card.Name}
           caption={card.Caption}

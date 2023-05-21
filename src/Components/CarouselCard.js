@@ -69,7 +69,7 @@ function CarouselCard(props) {
       </Grid>
       <Grid item xs={12} style={{ paddingTop: "1rem" }}>
         <small className="Card-small">
-          Image {props.currNum} of {props.totalNum}.
+          Image {props.currNum} of {props.totalNum}
         </small>
       </Grid>
     </Grid>
