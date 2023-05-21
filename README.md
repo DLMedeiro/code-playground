@@ -1,8 +1,8 @@
 # Welcome to the CodePlayground
 
-## It's messy, it's fun, It's how I learn
+It's messy, it's fun, It's how I learn
 
-### Running list of enhancement
+### Running list of enhancement and notes
 * Create a dummy login / account
 * optimize login / logout for navigation 
 * Testing
