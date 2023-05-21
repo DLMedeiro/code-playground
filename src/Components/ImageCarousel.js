@@ -126,6 +126,6 @@ ImageCarousel.defaultProps = {
       active: "https://dlmedeiro.github.io/Springboard-ToDoApp/",
     },
   ],
-  title: "Playground Showcase",
+  title: "Drawing Board",
 };
 export default ImageCarousel;
