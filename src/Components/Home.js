@@ -26,7 +26,7 @@ export default function Home() {
         item
         xs={8}
         style={{
-          backgroundColor: "rgba(52, 0, 196, .9)",
+          backgroundColor: "rgba(79, 55,115, .9)",
           color: "white",
           borderRadius: "20px",
         }}

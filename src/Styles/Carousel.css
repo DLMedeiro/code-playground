@@ -9,7 +9,7 @@
   cursor: pointer;
   margin: 1rem;
 
-  color: #31edfd;
+  color: #E9E6E9;
 
 }
 
@@ -19,5 +19,5 @@
 }
 
 .Carousel-main > i:hover {
-  color: #ff26c3;
+  color: #F18F01;
 }

@@ -15,17 +15,18 @@ function CarouselCard(props) {
       <Grid item xs={7}>
         <img className="Card-image" src={props.src} alt={props.caption} />
         <Button
-          variant="contained"
+          variant="outlined"
+          color="inherit"
           sx={{
             mt: 3,
             mb: 2,
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              backgroundColor: "#31edfd",
-              borderColor: "#31edfd",
+              backgroundColor: "#3581B8",
+              borderColor: "#3581B8",
               boxShadow: "none",
-              color: "#6d0173",
+              color: "#E9E6E9",
             },
           }}
           style={{ marginTop: "1rem" }}
@@ -36,22 +37,25 @@ function CarouselCard(props) {
             href={props.active}
             color="white"
             target="_blank"
+            style={{ color: "#E9E6E9" }}
           >
             Check it out here
           </Link>
         </Button>
         <Button
-          variant="contained"
+          variant="outlined"
+          color="inherit"
           sx={{
             mt: 3,
             mb: 2,
             borderRadius: "40px",
             margin: "0 auto",
+            // borderColor: "#3581B8",
             "&:hover": {
-              backgroundColor: "#31edfd",
-              borderColor: "#31edfd",
+              backgroundColor: "#3581B8",
+              borderColor: "#3581B8",
               boxShadow: "none",
-              color: "#6d0173",
+              color: "#E9E6E9",
             },
           }}
           style={{ marginTop: "1rem", marginLeft: "2rem" }}
@@ -62,6 +66,7 @@ function CarouselCard(props) {
             href={props.github}
             color="white"
             target="_blank"
+            style={{ color: "#E9E6E9" }}
           >
             View the Github Repository
           </Link>

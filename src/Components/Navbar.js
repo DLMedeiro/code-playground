@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../store/user-slice";
+import PaletteIcon from "@mui/icons-material/Palette";
 
 export default function Navbar() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -21,18 +22,16 @@ export default function Navbar() {
       <ul className="nav justify-content-center">
         <Button
           href="/login"
-          // color="inherit"
-          variant="contained"
+          color="inherit"
+          variant="outlined"
           sx={{
             mt: 3,
             mb: 2,
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              backgroundColor: "#31edfd",
-              borderColor: "#31edfd",
-              boxShadow: "none",
-              color: "#6d0173",
+              borderColor: "#F18F01",
+              color: "#F18F01",
             },
           }}
         >
@@ -41,7 +40,8 @@ export default function Navbar() {
         </Button>
         <Button
           href="/signup"
-          variant="contained"
+          variant="outlined"
+          color="inherit"
           sx={{
             mt: 3,
             mb: 2,
@@ -49,51 +49,35 @@ export default function Navbar() {
             margin: "0 auto",
             marginLeft: "20px",
             "&:hover": {
-              backgroundColor: "#31edfd",
-              borderColor: "#31edfd",
-              boxShadow: "none",
-              color: "#6d0173",
+              borderColor: "#F18F01",
+              color: "#F18F01",
             },
           }}
         >
           Create Account
         </Button>
       </ul>
-      // <ul className="nav justify-content-center">
-      //   <li className="nav-item nav-link">
-      //     <Link to="/">Home</Link>
-      //   </li>
-      //   <li className="nav-item nav-link">
-      //     <Link to="/login">Login</Link>
-      //     {/* LoginForm */}
-      //   </li>
-      //   <li className="nav-item nav-link">
-      //     <Link to="/signup">Create Account</Link>
-      //   </li>
-      // </ul>
     );
   }
   function loggedIn() {
     return (
       <ul className="nav justify-content-center">
-        <Button href="/profile" color="inherit">
+        {/* <Button href="/profile" color="inherit">
           Profile
-        </Button>
+        </Button> */}
         <Button
           onClick={logout}
           href="/"
           color="inherit"
-          variant="contained"
+          variant="outlined"
           sx={{
             mt: 3,
             mb: 2,
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              backgroundColor: "#31edfd",
-              borderColor: "#31edfd",
-              boxShadow: "none",
-              color: "#6d0173",
+              borderColor: "#F18F01",
+              color: "#F18F01",
             },
           }}
         >
@@ -108,25 +92,33 @@ export default function Navbar() {
       <AppBar
         position="static"
         style={{
-          backgroundColor: "rgba(52, 0, 196, .9)",
-          color: "white",
+          backgroundColor: "rgba(79, 55,115, .9)",
+          color: "#E9E6E9",
         }}
       >
         <Toolbar>
-          {/* <IconButton
+          <IconButton
             size="large"
             edge="start"
             color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
+            aria-label="home"
+            sx={{
+              mr: 2,
+              "&:hover": {
+                borderColor: "#F18F01",
+                color: "#F18F01",
+              },
+            }}
+            href="/"
           >
-            <MenuIcon />
-          </IconButton> */}
+            <PaletteIcon />
+          </IconButton>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1 }}
             align="left"
+            onClick="/"
           >
             CodePlayground
           </Typography>
