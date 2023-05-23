@@ -30,7 +30,7 @@
     border: 2px solid;
   }
 
-  #nav-button :hover {
+  #nav-button:hover {
     border-color: #a0070a;
     border: 2px solid;
     color: #a0070a;

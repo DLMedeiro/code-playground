@@ -113,8 +113,8 @@ export default function Navbar() {
             aria-label="home"
             sx={{
               "&:hover": {
-                borderColor: "#dac6c5",
-                color: "#dac6c5",
+                borderColor: "rgba(160, 7, 10, .3)",
+                color: "rgba(160, 7, 10, .3)",
               },
             }}
             href="/code-playground/"
