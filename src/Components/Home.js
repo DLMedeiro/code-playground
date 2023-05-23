@@ -26,14 +26,14 @@ export default function Home() {
         item
         xs={8}
         style={{
-          backgroundColor: "rgba(79, 55,115, .9)",
-          color: "white",
+          borderColor: "#a0070a",
+          backgroundColor: "#dac6c5",
+          color: "#a0070a",
           borderRadius: "20px",
         }}
       >
         <ImageCarousel />
       </Grid>
-
     </Grid>
   );
 }

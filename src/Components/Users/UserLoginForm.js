@@ -71,21 +71,21 @@ const UserLoginForm = () => {
     <section>
       <Card
         style={{
-          borderColor: "#F18F01",
-          backgroundColor: "#E9E6E9",
-          background: "transparent",
+          borderColor: "#a0070a",
+          backgroundColor: "#dac6c5",
+          color: "#a0070a",
+          // background: "transparent",
           margin: "5rem",
           marginLeft: "15rem",
           marginRight: "15rem",
           padding: "3rem",
-          color: "#4F3773",
         }}
       >
         <h1>Login</h1>
         <CardBody className="text-center">
           {loading ? (
             <View style={[styles.container, styles.horizontal]}>
-              <ActivityIndicator size="large" color="#F18F01" />
+              <ActivityIndicator size="large" color="#a0070a" />
             </View>
           ) : (
             ""

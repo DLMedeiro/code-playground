@@ -30,8 +30,9 @@ export default function Navbar() {
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              borderColor: "#F18F01",
-              color: "#F18F01",
+              borderColor: "#dac6c5",
+              color: "#dac6c5",
+              background: "#a0070a",
             },
           }}
         >
@@ -49,8 +50,9 @@ export default function Navbar() {
             margin: "0 auto",
             marginLeft: "20px",
             "&:hover": {
-              borderColor: "#F18F01",
-              color: "#F18F01",
+              borderColor: "#dac6c5",
+              color: "#dac6c5",
+              background: "#a0070a",
             },
           }}
         >
@@ -76,8 +78,9 @@ export default function Navbar() {
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              borderColor: "#F18F01",
-              color: "#F18F01",
+              borderColor: "#dac6c5",
+              color: "#dac6c5",
+              background: "#a0070a",
             },
           }}
         >
@@ -92,8 +95,8 @@ export default function Navbar() {
       <AppBar
         position="static"
         style={{
-          backgroundColor: "rgba(79, 55,115, .9)",
-          color: "#E9E6E9",
+          backgroundColor: "#dac6c5",
+          color: "#a0070a",
         }}
       >
         <Toolbar>
@@ -105,8 +108,8 @@ export default function Navbar() {
             sx={{
               mr: 2,
               "&:hover": {
-                borderColor: "#F18F01",
-                color: "#F18F01",
+                borderColor: "#dac6c5",
+                color: "#dac6c5",
               },
             }}
             href="/code-playground/"

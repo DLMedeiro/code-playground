@@ -25,10 +25,9 @@ function CarouselCard(props) {
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              backgroundColor: "#3581B8",
-              borderColor: "#3581B8",
+              backgroundColor: "rgba(160, 7, 10, .3)",
+              borderColor: "rgba(160, 7, 10, .3)",
               boxShadow: "none",
-              color: "#E9E6E9",
             },
           }}
           style={{ marginTop: "1rem" }}
@@ -39,7 +38,7 @@ function CarouselCard(props) {
             href={props.active}
             color="white"
             target="_blank"
-            style={{ color: "#E9E6E9" }}
+            style={{ color: "#a0070a" }}
           >
             Check it out here
           </Link>
@@ -54,10 +53,10 @@ function CarouselCard(props) {
             margin: "0 auto",
             // borderColor: "#3581B8",
             "&:hover": {
-              backgroundColor: "#3581B8",
-              borderColor: "#3581B8",
+              color: "#dac6c5",
+              backgroundColor: "rgba(160, 7, 10, .3)",
+              borderColor: "rgba(160, 7, 10, .3)",
               boxShadow: "none",
-              color: "#E9E6E9",
             },
           }}
           style={{ marginTop: "1rem", marginLeft: "2rem" }}
@@ -66,9 +65,8 @@ function CarouselCard(props) {
           <Link
             underline="none"
             href={props.github}
-            color="white"
             target="_blank"
-            style={{ color: "#E9E6E9" }}
+            style={{ color: "#a0070a" }}
           >
             View the Github Repository
           </Link>

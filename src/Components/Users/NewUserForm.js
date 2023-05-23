@@ -70,21 +70,21 @@ function NewUserForm() {
     <section>
       <Card
         style={{
-          borderColor: "#F18F01",
-          backgroundColor: "#E9E6E9",
-          background: "transparent",
+          borderColor: "#a0070a",
+          backgroundColor: "#dac6c5",
+          // background: "transparent",
           margin: "5rem",
           marginLeft: "10rem",
           marginRight: "10rem",
           paddingTop: "2rem",
-          color: "#4F3773",
+          color: "#a0070a",
         }}
       >
         <h1>Create New Account</h1>
         <CardBody className="text-center">
           {loading ? (
             <View style={[styles.container, styles.horizontal]}>
-              <ActivityIndicator size="large" color="#F18F01" />
+              <ActivityIndicator size="large" color="#a0070a" />
             </View>
           ) : (
             ""
