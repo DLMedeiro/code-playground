@@ -8,6 +8,26 @@ body{
   overflow: hidden;
 
 }
+h1 {
+  margin: 2rem;
+}
+.drawing-board-grid{
+  max-width: 650px;
+  border-color: #a0070a;
+  background-color: transparent;
+  color: #a0070a;
+  border-radius: 20px;
+}
+
+.drawing-board-button {
+  color: #a0070a;
+}
+.drawing-board-button:hover{
+  color: #a0070a;
+}
+.drawing-board-container{
+  margin-top: 20vh;
+}
 .App {
   text-align: center;
 
@@ -47,4 +67,24 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 1375px) {
+
+  .drawing-board-grid{
+    /* max-width: 800px; */
+    background-color: #e1cccb;
+  }
+  .drawing-board-container{
+    margin-top: 10vh;
+}
+}
+@media screen and (max-width: 500px) {
+
+  .drawing-board-container{
+    margin-top: 0vh;
+}
+h1 {
+  margin: 10px;
+}
 }

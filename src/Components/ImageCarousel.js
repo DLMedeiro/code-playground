@@ -21,16 +21,16 @@ function ImageCarousel(props) {
 
   return (
     <div className="Carousel">
-      <h1 style={{ margin: "2rem" }}>{props.title}</h1>
+      <h1>{props.title}</h1>
       <div className="Carousel-main">
         {hideLeft ? (
           <i
             style={{ color: "transparent", pointerEvents: "none" }}
-            className="fas fa-chevron-circle-left fa-2x"
+            className="fas fa-chevron-circle-left fa"
           />
         ) : (
           <i
-            className="fas fa-chevron-circle-left fa-2x"
+            className="fas fa-chevron-circle-left fa"
             onClick={goBackward}
             data-testid="right-arrow"
           />
@@ -48,11 +48,11 @@ function ImageCarousel(props) {
         {hideRight ? (
           <i
             style={{ color: "transparent", pointerEvents: "none" }}
-            className="fas fa-chevron-circle-right fa-2x"
+            className="fas fa-chevron-circle-right fa"
           />
         ) : (
           <i
-            className="fas fa-chevron-circle-right fa-2x"
+            className="fas fa-chevron-circle-right fa"
             onClick={goForward}
             data-testid="right-arrow"
           />
@@ -66,8 +66,8 @@ ImageCarousel.defaultProps = {
     {
       Name: "War Card Game",
       Caption:
-        "Two-player card game with the goal of collecting all 52 cards. This application is intended to closely replicate game play through a website format, allowing two users to play against one another on a single device, or against a computer.",
-      Tech: "Backend API built with Node JS, Express, PostgreSQL. Dynamic Frontend built with React, Redux, Bootstrap, CSS.",
+        "Two-player card game 'War' built to closely replicate game play through a website format.  Application allows two users to play against one another on a single device, or against a computer.",
+      Tech: "Backend API: Node JS, Express, PostgreSQL. Frontend: React, Redux, Bootstrap, CSS.",
       Github: "https://github.com/DLMedeiro/war-frontend.git",
       src: war,
       active: "https://warcardgame-frontend.onrender.com/",

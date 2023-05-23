@@ -19,42 +19,46 @@ export default function Navbar() {
   };
   function loggedOut() {
     return (
-      <ul className="nav justify-content-center">
+      <ul className="nav justify-content-center ">
         <Button
+          id="nav-button"
           href="/code-playground/login"
-          color="inherit"
+          // color="inherit"
           variant="outlined"
-          sx={{
-            mt: 3,
-            mb: 2,
-            borderRadius: "40px",
-            margin: "0 auto",
-            "&:hover": {
-              borderColor: "#dac6c5",
-              color: "#dac6c5",
-              background: "#a0070a",
-            },
-          }}
+          // className="nav-button"
+          // sx={{
+          //   mt: 3,
+          //   mb: 2,
+          //   borderRadius: "40px",
+          //   margin: "0 auto",
+          //   "&:hover": {
+          //     borderColor: "#dac6c5",
+          //     color: "#dac6c5",
+          //     background: "#a0070a",
+          //   },
+          // }}
         >
           Login
           {/* LoginForm */}
         </Button>
         <Button
+          id="nav-button"
           href="/code-playground/signup"
           variant="outlined"
-          color="inherit"
-          sx={{
-            mt: 3,
-            mb: 2,
-            borderRadius: "40px",
-            margin: "0 auto",
-            marginLeft: "20px",
-            "&:hover": {
-              borderColor: "#dac6c5",
-              color: "#dac6c5",
-              background: "#a0070a",
-            },
-          }}
+          // color="inherit"
+          // className="nav-button"
+          // sx={{
+          //   mt: 3,
+          //   mb: 2,
+          //   borderRadius: "40px",
+          //   margin: "0 auto",
+          //   marginLeft: "20px",
+          //   "&:hover": {
+          //     borderColor: "#dac6c5",
+          //     color: "#dac6c5",
+          //     background: "#a0070a",
+          //   },
+          // }}
         >
           Create Account
         </Button>
@@ -68,21 +72,23 @@ export default function Navbar() {
           Profile
         </Button> */}
         <Button
+          id="nav-button"
           onClick={logout}
           href="/code-playground/"
-          color="inherit"
+          // color="inherit"
           variant="outlined"
-          sx={{
-            mt: 3,
-            mb: 2,
-            borderRadius: "40px",
-            margin: "0 auto",
-            "&:hover": {
-              borderColor: "#dac6c5",
-              color: "#dac6c5",
-              background: "#a0070a",
-            },
-          }}
+          // className="nav-button"
+          // sx={{
+          //   mt: 3,
+          //   mb: 2,
+          //   borderRadius: "40px",
+          //   margin: "0 auto",
+          //   "&:hover": {
+          //     borderColor: "#dac6c5",
+          //     color: "#dac6c5",
+          //     background: "#a0070a",
+          //   },
+          // }}
         >
           Log Out
         </Button>
@@ -106,7 +112,6 @@ export default function Navbar() {
             color="inherit"
             aria-label="home"
             sx={{
-              mr: 2,
               "&:hover": {
                 borderColor: "#dac6c5",
                 color: "#dac6c5",

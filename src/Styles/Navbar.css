@@ -1,10 +1,9 @@
 /* Navbar */
-.nav{
+/* .nav{
     padding-top:1rem;
     padding-bottom: 1rem;
     background-color: white;
     text-transform: uppercase;
-    /* font-weight: 100; */
     list-style: none;
   }
   .nav a {
@@ -22,6 +21,37 @@
   .nav a.current {
     color: black;
     border-color: 3px var(--color1) solid;
+  } */
+
+  #nav-button Button{
+    background-color: #a0070a;
+    border-radius: 40px;
+    border-color: transparent;
+    border: 2px solid;
   }
+
+  #nav-button :hover {
+    border-color: #a0070a;
+    border: 2px solid;
+    color: #a0070a;
+    border-radius: 40px;
+  }
+      /* mt: 3,
+  mb: 2,
+  
+  margin: "0 auto",
+  "&:hover": {
+    borderColor: "#dac6c5",
+    color: "#dac6c5",
+    ,
+  }
+ */
+
+ @media screen and (max-width: 500px) {
+  #nav-button{
+    font-size: 10px;
+  }
+
+}
 
  

@@ -2,16 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 .Carousel-main > i {
   cursor: pointer;
-  margin: 1rem;
-
-  color: #a0070a;
-
-
+  /* margin: 1rem; */
+  color: #a0070a
 }
 
 .Carousel-main > i.hidden {
@@ -22,3 +18,4 @@
 .Carousel-main > i:hover {
   color: rgba(160, 7, 10, .3);
 }
+

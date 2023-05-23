@@ -7,7 +7,7 @@ import Link from "@mui/material/Link";
 function CarouselCard(props) {
   return (
     <Grid container spacing={0}>
-      <Grid item xs={5}>
+      <Grid item xs={5} style={{ paddingLeft: "15px" }}>
         <h2 className="Card-title">{props.name}</h2>
         <h4 className="card-h4">Description</h4>
         <p className="card-p">{props.caption}</p>
@@ -36,11 +36,10 @@ function CarouselCard(props) {
           <Link
             underline="none"
             href={props.active}
-            color="white"
             target="_blank"
-            style={{ color: "#a0070a" }}
+            className="drawing-board-button"
           >
-            Check it out here
+            View Site
           </Link>
         </Button>
         <Button
@@ -59,16 +58,16 @@ function CarouselCard(props) {
               boxShadow: "none",
             },
           }}
-          style={{ marginTop: "1rem", marginLeft: "2rem" }}
+          style={{ marginTop: "1rem", marginLeft: "1rem" }}
           href={props.github}
         >
           <Link
             underline="none"
             href={props.github}
             target="_blank"
-            style={{ color: "#a0070a" }}
+            className="drawing-board-button"
           >
-            View the Github Repository
+            Source Code
           </Link>
         </Button>
       </Grid>

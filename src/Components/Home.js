@@ -14,23 +14,26 @@ export default function Home() {
     <Grid
       container
       spacing={0}
+      className="drawing-board-container"
       sx={{
         padding: "50px 0",
-        height: "90vh",
+        // height: "120vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
       <Grid
+        className="drawing-board-grid"
         item
-        xs={8}
-        style={{
-          borderColor: "#a0070a",
-          backgroundColor: "#dac6c5",
-          color: "#a0070a",
-          borderRadius: "20px",
-        }}
+        // xs={10}
+        // style={{
+        //   borderColor: "#a0070a",
+        //   backgroundColor: "#e1cccb",
+        //   background: "transparent",
+        //   color: "#a0070a",
+        //   borderRadius: "20px",
+        // }}
       >
         <ImageCarousel />
       </Grid>
