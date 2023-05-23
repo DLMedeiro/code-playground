@@ -34,6 +34,7 @@ h1 {
   /* max-width: 50rem; */
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -85,6 +86,6 @@ h1 {
     margin-top: 0vh;
 }
 h1 {
-  margin: 10px;
+  margin: 5px;
 }
 }

@@ -12,6 +12,7 @@ import {
   FormGroup,
   Form,
 } from "reactstrap";
+import Grid from "@mui/material/Grid";
 
 // outline in orange
 // background offwhite
@@ -68,17 +69,30 @@ const UserLoginForm = () => {
   }, [loading]);
 
   return (
-    <section>
+    <Grid
+      container
+      spacing={0}
+      className="drawing-board-container"
+      sx={{
+        padding: "50px 0",
+        // height: "120vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Card
+        className="drawing-board-grid"
         style={{
-          borderColor: "#a0070a",
-          backgroundColor: "#dac6c5",
-          color: "#a0070a",
+          width: "300px",
+          // borderColor: "#a0070a",
+          // backgroundColor: "#dac6c5",
+          // color: "#a0070a",
           // background: "transparent",
-          margin: "5rem",
-          marginLeft: "15rem",
-          marginRight: "15rem",
-          padding: "3rem",
+          // margin: "5rem",
+          // marginLeft: "15rem",
+          // marginRight: "15rem",
+          // padding: "3rem",
         }}
       >
         <h1>Login</h1>
@@ -141,7 +155,7 @@ const UserLoginForm = () => {
           </Form>
         </CardBody>
       </Card>
-    </section>
+    </Grid>
   );
 };
 

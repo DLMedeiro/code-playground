@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import { registerUser } from "../../store/user-slice";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
+import Grid from "@mui/material/Grid";
 
 function NewUserForm() {
   const dispatch = useDispatch();
@@ -67,18 +68,32 @@ function NewUserForm() {
   }, [loading]);
 
   return (
-    <section>
+    // <section>
+    <Grid
+      container
+      spacing={0}
+      className="drawing-board-container"
+      sx={{
+        padding: "50px 0",
+        // height: "120vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Card
-        style={{
-          borderColor: "#a0070a",
-          backgroundColor: "#dac6c5",
-          // background: "transparent",
-          margin: "5rem",
-          marginLeft: "10rem",
-          marginRight: "10rem",
-          paddingTop: "2rem",
-          color: "#a0070a",
-        }}
+        className="drawing-board-grid"
+
+        // style={{
+        //   borderColor: "#a0070a",
+        //   backgroundColor: "#dac6c5",
+        //   // background: "transparent",
+        //   margin: "5rem",
+        //   marginLeft: "10rem",
+        //   marginRight: "10rem",
+        //   paddingTop: "2rem",
+        //   color: "#a0070a",
+        // }}
       >
         <h1>Create New Account</h1>
         <CardBody className="text-center">
@@ -166,7 +181,7 @@ function NewUserForm() {
           </Form>
         </CardBody>
       </Card>
-    </section>
+    </Grid>
   );
 }
 
