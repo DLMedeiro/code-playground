@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
       <ul className="nav justify-content-center">
         <Button
-          href="/login"
+          href="/code-playground/login"
           color="inherit"
           variant="outlined"
           sx={{
@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* LoginForm */}
         </Button>
         <Button
-          href="/signup"
+          href="/code-playground/signup"
           variant="outlined"
           color="inherit"
           sx={{
@@ -67,7 +67,7 @@ export default function Navbar() {
         </Button> */}
         <Button
           onClick={logout}
-          href="/"
+          href="/code-playground/"
           color="inherit"
           variant="outlined"
           sx={{
@@ -109,7 +109,7 @@ export default function Navbar() {
                 color: "#F18F01",
               },
             }}
-            href="/"
+            href="/code-playground/"
           >
             <PaletteIcon />
           </IconButton>
@@ -118,7 +118,7 @@ export default function Navbar() {
             component="div"
             sx={{ flexGrow: 1 }}
             align="left"
-            onClick="/"
+            onClick="/code-playground/"
           >
             CodePlayground
           </Typography>
