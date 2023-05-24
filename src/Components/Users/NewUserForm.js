@@ -46,7 +46,7 @@ function NewUserForm() {
   };
   useEffect(() => {
     if (isLoggedIn) {
-      return redirect("code-playground/");
+      return redirect("/");
     }
   }, [isLoggedIn]);
 

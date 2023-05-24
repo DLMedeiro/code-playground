@@ -27,19 +27,16 @@ function App() {
       <NavBar />
       {isLoggedIn ? (
         <Routes>
-          <Route path="code-playground/" element={<WelcomeUser />}></Route>
-          <Route path="code-playground/login" element={<WelcomeUser />}></Route>
-          <Route path="code-playground/logout" element={<LoginForm />}></Route>
-          <Route
-            path="code-playground/signup"
-            element={<WelcomeUser />}
-          ></Route>
+          <Route path="/" element={<WelcomeUser />}></Route>
+          <Route path="/login" element={<WelcomeUser />}></Route>
+          <Route path="/logout" element={<LoginForm />}></Route>
+          <Route path="/signup" element={<WelcomeUser />}></Route>
         </Routes>
       ) : (
         <Routes>
-          <Route path="code-playground/" element={<WelcomeUser />}></Route>
-          <Route path="code-playground/signup" element={<SignUpForm />}></Route>
-          <Route path="code-playground/login" element={<LoginForm />}></Route>
+          <Route path="/" element={<WelcomeUser />}></Route>
+          <Route path="/signup" element={<SignUpForm />}></Route>
+          <Route path="/login" element={<LoginForm />}></Route>
         </Routes>
       )}
     </div>
