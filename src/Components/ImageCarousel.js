@@ -95,7 +95,7 @@ ImageCarousel.defaultProps = {
       Caption:
         "Players are shown a collection of cards, face down, and can click on two cards at a time to reveal what’s underneath. The goal of the game is to match up all the pairs.",
       Tech: "JavaScript, CSS, HTML",
-      Github: "https://github.com/DLMedeiro/Connect4-OO.git",
+      Github: "https://github.com/DLMedeiro/Springboard-MemoryGame",
       src: memory,
       active: "https://dlmedeiro.github.io/Springboard-MemoryGame/",
     },
