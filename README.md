@@ -32,7 +32,7 @@ Players are shown a collection of cards, face down, and can click on two cards a
 __Technologies__
 JavaScript, CSS, HTML
 [View Site](https://dlmedeiro.github.io/Springboard-MemoryGame/)
-[View Source Code](https://github.com/DLMedeiro/Connect4-OO.git)
+[View Source Code](https://github.com/DLMedeiro/Springboard-MemoryGame)
 ### Magic Eight Ball
 __Description__
 Simulation of the classic Magic Eight Ball.
