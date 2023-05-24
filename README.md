@@ -77,7 +77,7 @@ JavaScript, CSS, HTML
 
 ## Application Notes
 To run locally: ```npm start```
-Run after changes are committed: ```npm run deploy -- -m "Deploy React app to GitHub Pages"```
+run ```npm run build``` after making changes
 
 ## Learnings
 ### Deployment of frontend with surge
