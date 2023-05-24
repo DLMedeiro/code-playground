@@ -2,7 +2,7 @@
 
 It's messy, it's fun, It's how I learn
 
-View at: https://frightened-flame.surge.sh/
+View at: https://pink-jellyfish.surge.sh
 
 ## Contents
 ### War Card Game
@@ -77,7 +77,7 @@ JavaScript, CSS, HTML
 
 ## Application Notes
 To run locally: ```npm start```
-run ```npm run build``` after making changes
+To update project using Surge, run ```surge``` in the project directory and input the same domain already being used as the domain.
 
 ## Learnings
 ### Deployment of frontend with surge
