@@ -25,8 +25,8 @@ function CarouselCard(props) {
             borderRadius: "40px",
             margin: "0 auto",
             "&:hover": {
-              backgroundColor: "rgba(160, 7, 10, .3)",
-              borderColor: "rgba(160, 7, 10, .3)",
+              backgroundColor: "rgba(43, 113, 187, .3)",
+              borderColor: "rgba(43, 113, 187, .3)",
               boxShadow: "none",
             },
           }}
@@ -52,9 +52,9 @@ function CarouselCard(props) {
             margin: "0 auto",
             // borderColor: "#3581B8",
             "&:hover": {
-              color: "#dac6c5",
-              backgroundColor: "rgba(160, 7, 10, .3)",
-              borderColor: "rgba(160, 7, 10, .3)",
+              color: "#3581B8",
+              backgroundColor: "rgba(43, 113, 187, .3)",
+              borderColor: "rgba(43, 113, 187, .3)",
               boxShadow: "none",
             },
           }}

@@ -101,8 +101,8 @@ export default function Navbar() {
       <AppBar
         position="static"
         style={{
-          backgroundColor: "#dac6c5",
-          color: "#a0070a",
+          backgroundColor: "#fff",
+          color: "#2b71bb",
         }}
       >
         <Toolbar>

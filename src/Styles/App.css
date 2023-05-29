@@ -1,6 +1,6 @@
 
 body{
-  background: url('../images/pexels-ann-h-4503357.jpg') no-repeat center center fixed; 
+  background: url('../images/nico-smit-eMFw6fSF7sM-unsplash.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,17 +13,17 @@ h1 {
 }
 .drawing-board-grid{
   max-width: 650px;
-  border-color: #a0070a;
-  background-color: transparent;
-  color: #a0070a;
+  border-color: #2b71bb;
+  background-color: #fff;
+  color: #2b71bb;
   border-radius: 20px;
 }
 
 .drawing-board-button {
-  color: #a0070a;
+  color: #2b71bb;
 }
 .drawing-board-button:hover{
-  color: #a0070a;
+  color: #2b71bb;
 }
 .drawing-board-container{
   margin-top: 20vh;
@@ -54,7 +54,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
 .App-link {
@@ -72,10 +72,6 @@ h1 {
 
 @media screen and (max-width: 1375px) {
 
-  .drawing-board-grid{
-    /* max-width: 800px; */
-    background-color: #e1cccb;
-  }
   .drawing-board-container{
     margin-top: 10vh;
 }

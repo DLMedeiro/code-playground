@@ -24,16 +24,16 @@
   } */
 
   #nav-button Button{
-    background-color: #a0070a;
+    background-color: #2b71bb;
     border-radius: 40px;
     border-color: transparent;
     border: 2px solid;
   }
 
   #nav-button:hover {
-    border-color: #a0070a;
+    border-color: #2b71bb;
     border: 2px solid;
-    color: #a0070a;
+    color: #2b71bb;
     border-radius: 40px;
   }
       /* mt: 3,

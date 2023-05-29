@@ -7,7 +7,7 @@
 .Carousel-main > i {
   cursor: pointer;
   /* margin: 1rem; */
-  color: #a0070a
+  color: #2b71bb
 }
 
 .Carousel-main > i.hidden {
@@ -16,6 +16,6 @@
 }
 
 .Carousel-main > i:hover {
-  color: rgba(160, 7, 10, .3);
+  color: #1c4b7c;
 }
 

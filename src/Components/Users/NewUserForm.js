@@ -99,7 +99,7 @@ function NewUserForm() {
         <CardBody className="text-center">
           {loading ? (
             <View style={[styles.container, styles.horizontal]}>
-              <ActivityIndicator size="large" color="#a0070a" />
+              <ActivityIndicator size="large" color="#2b71bb" />
             </View>
           ) : (
             ""

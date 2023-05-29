@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import "../Styles/imageFade.scss";
 import ImageCarousel from "./ImageCarousel";
 
-import HeroImage from "../images/pexels-stas-knop-3283142 (1).jpg";
 import axios from "axios";
 
 export default function Home() {

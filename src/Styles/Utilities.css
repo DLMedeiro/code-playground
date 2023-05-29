@@ -6,8 +6,8 @@ button[type=submit]:disabled{
 /* Form */
 
 .form-control:focus{
-  border-color: #a0070a !important;
-  box-shadow: 0 0 0 0.05rem #a0070a !important;
+  border-color: #2b71bb !important;
+  box-shadow: 0 0 0 0.05rem #2b71bb !important;
 }
 
   /* Buttons */
@@ -41,7 +41,7 @@ button[type=submit]:disabled{
   background: transparent;
   border-radius: .5rem;
   box-sizing: border-box;
-  color: #a0070a;
+  color: #2b71bb;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -53,7 +53,7 @@ button[type=submit]:disabled{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  border: #a0070a 2px solid;
+  border: #2b71bb 2px solid;
 }
 
 #btn-main:hover{
@@ -62,8 +62,8 @@ button[type=submit]:disabled{
 }
 #btn-login:hover{
   color: #E9E6E9;
-  border: var(#a0070a) 2px solid;
-  background-color: #a0070a;
+  border: var(#2b71bb) 2px solid;
+  background-color: #2b71bb;
 }
 
 #btn-main:focus{
