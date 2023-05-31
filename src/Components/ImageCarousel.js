@@ -5,6 +5,7 @@ import magicEightBall from "../images/MagicEightBall1.png";
 import memory from "../images/Memory1.png";
 import toDo from "../images/ToDo1.png";
 import war from "../images/War.PNG";
+import Grid from "@mui/material/Grid";
 
 import Card from "./CarouselCard";
 import "../Styles/Carousel.css";
@@ -23,6 +24,23 @@ function ImageCarousel(props) {
     <div className="Carousel">
       <h1>{props.title}</h1>
       <div className="Carousel-main">
+        <Card
+          name={card.Name}
+          caption={card.Caption}
+          tech={card.Tech}
+          github={card.Github}
+          src={card.src}
+          active={card.active}
+          currNum={cardIdx + 1}
+          totalNum={total}
+        />
+      </div>
+      <Grid
+        className="footer"
+        item
+        xs={12}
+        style={{ paddingTop: "1rem", paddingBottom: "1rem" }}
+      >
         {hideLeft ? (
           <i
             style={{ color: "transparent", pointerEvents: "none" }}
@@ -35,16 +53,10 @@ function ImageCarousel(props) {
             data-testid="right-arrow"
           />
         )}
-        <Card
-          name={card.Name}
-          caption={card.Caption}
-          tech={card.Tech}
-          github={card.Github}
-          src={card.src}
-          active={card.active}
-          currNum={cardIdx + 1}
-          totalNum={total}
-        />
+        <small className="Card-small">
+          Image {cardIdx + 1} of {total}
+        </small>
+
         {hideRight ? (
           <i
             style={{ color: "transparent", pointerEvents: "none" }}
@@ -57,7 +69,7 @@ function ImageCarousel(props) {
             data-testid="right-arrow"
           />
         )}
-      </div>
+      </Grid>
     </div>
   );
 }

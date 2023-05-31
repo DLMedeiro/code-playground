@@ -4,18 +4,19 @@
   justify-content: center;
 }
 
-.Carousel-main > i {
+.footer > i {
   cursor: pointer;
-  /* margin: 1rem; */
+
+  margin: 2rem;
   color: #2b71bb
 }
 
-.Carousel-main > i.hidden {
+.footer > i.hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.Carousel-main > i:hover {
+.footer > i:hover {
   color: #1c4b7c;
 }
 

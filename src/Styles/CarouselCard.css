@@ -27,7 +27,7 @@
   .Card-image {
     border-radius: 8px;
     width: 90%;
-    height: 300px;
+    height: 350px;
   }
 
   @media screen and (max-width: 1375px) {
@@ -44,7 +44,7 @@
     .Card-image {
       border-radius: 8px;
       width: 90%;
-      height: 200px;
+      height: 300px;
     }
   }
   @media screen and (max-width: 500px) {

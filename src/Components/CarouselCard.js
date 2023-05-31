@@ -3,6 +3,8 @@ import "../Styles/CarouselCard.css";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function CarouselCard(props) {
   return (
@@ -17,18 +19,12 @@ function CarouselCard(props) {
       <Grid item xs={7}>
         <img className="Card-image" src={props.src} alt={props.caption} />
         <Button
-          variant="outlined"
+          // variant="outlined"
           color="inherit"
           sx={{
             mt: 3,
             mb: 2,
-            borderRadius: "40px",
             margin: "0 auto",
-            "&:hover": {
-              backgroundColor: "rgba(43, 113, 187, .3)",
-              borderColor: "rgba(43, 113, 187, .3)",
-              boxShadow: "none",
-            },
           }}
           style={{ marginTop: "1rem" }}
           href={props.active}
@@ -38,25 +34,23 @@ function CarouselCard(props) {
             href={props.active}
             target="_blank"
             className="drawing-board-button"
+            sx={{
+              borderBottom: "2px solid transparent",
+              "&:hover": {
+                borderBottom: "2px solid #2b71bb",
+              },
+            }}
           >
+            <PlayCircleOutlineIcon sx={{ marginRight: "5px" }} />
             View Site
           </Link>
         </Button>
         <Button
-          variant="outlined"
           color="inherit"
           sx={{
             mt: 3,
             mb: 2,
-            borderRadius: "40px",
             margin: "0 auto",
-            // borderColor: "#3581B8",
-            "&:hover": {
-              color: "#3581B8",
-              backgroundColor: "rgba(43, 113, 187, .3)",
-              borderColor: "rgba(43, 113, 187, .3)",
-              boxShadow: "none",
-            },
           }}
           style={{ marginTop: "1rem", marginLeft: "1rem" }}
           href={props.github}
@@ -66,16 +60,23 @@ function CarouselCard(props) {
             href={props.github}
             target="_blank"
             className="drawing-board-button"
+            sx={{
+              borderBottom: "2px solid transparent",
+              "&:hover": {
+                borderBottom: "2px solid #2b71bb",
+              },
+            }}
           >
+            <GitHubIcon sx={{ marginRight: "5px" }} />
             Source Code
           </Link>
         </Button>
       </Grid>
-      <Grid item xs={12} style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
+      {/* <Grid item xs={12} style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
         <small className="Card-small">
           Image {props.currNum} of {props.totalNum}
         </small>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }

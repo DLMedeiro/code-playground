@@ -25,9 +25,8 @@ h1 {
 .drawing-board-button:hover{
   color: #2b71bb;
 }
-.drawing-board-container{
-  margin-top: 20vh;
-}
+
+
 .App {
   text-align: center;
 
@@ -72,15 +71,15 @@ h1 {
 
 @media screen and (max-width: 1375px) {
 
-  .drawing-board-container{
+  /* .drawing-board-container{
     margin-top: 10vh;
-}
+} */
 }
 @media screen and (max-width: 500px) {
 
-  .drawing-board-container{
+  /* .drawing-board-container{
     margin-top: 0vh;
-}
+} */
 h1 {
   margin: 5px;
 }

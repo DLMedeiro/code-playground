@@ -74,27 +74,13 @@ function NewUserForm() {
       spacing={0}
       className="drawing-board-container"
       sx={{
-        padding: "50px 0",
-        // height: "120vh",
+        padding: "25px 0",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <Card
-        className="drawing-board-grid"
-
-        // style={{
-        //   borderColor: "#a0070a",
-        //   backgroundColor: "#dac6c5",
-        //   // background: "transparent",
-        //   margin: "5rem",
-        //   marginLeft: "10rem",
-        //   marginRight: "10rem",
-        //   paddingTop: "2rem",
-        //   color: "#a0070a",
-        // }}
-      >
+      <Card className="drawing-board-grid">
         <h1>Create New Account</h1>
         <CardBody className="text-center">
           {loading ? (
