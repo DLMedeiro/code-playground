@@ -10,9 +10,6 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { Provider } from "react-redux";
 import store from "./store";
 
-// #F18F01
-//    color: "#E9E6E9",
-
 const theme = createTheme({
   palette: {
     primary: {

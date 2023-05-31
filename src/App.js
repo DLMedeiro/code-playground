@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles/App.css";
-// import "./Styles/index.css";
 import "./Styles/Navbar.css";
 import "./Styles/Toast.css";
 import "./Styles/Utilities.css";

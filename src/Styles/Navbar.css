@@ -1,57 +1,18 @@
-/* Navbar */
-/* .nav{
-    padding-top:1rem;
-    padding-bottom: 1rem;
-    background-color: white;
-    text-transform: uppercase;
-    list-style: none;
-  }
-  .nav a {
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: black;
-    border-bottom: 3px transparent solid;
-    transition: border-color 0.5s;
-    padding-bottom: 0.5rem;
-  }
-  .nav a:hover {
-    color: black;
-    border-bottom: 3px var(--color1) solid;
-  }
-  .nav a.current {
-    color: black;
-    border-color: 3px var(--color1) solid;
-  } */
-
-  #nav-button Button{
-    background-color: #2b71bb;
-    border-radius: 40px;
-    border-color: transparent;
-    border: 2px solid;
-  }
-
-  #nav-button:hover {
-    border-color: #2b71bb;
-    border: 2px solid;
-    color: #2b71bb;
-    border-radius: 40px;
-  }
-      /* mt: 3,
-  mb: 2,
-  
-  margin: "0 auto",
-  "&:hover": {
-    borderColor: "#dac6c5",
-    color: "#dac6c5",
-    ,
-  }
- */
-
- @media screen and (max-width: 500px) {
-  #nav-button{
-    font-size: 10px;
-  }
-
+#nav-button{
+  border-bottom: 2px solid transparent;
 }
+
+#nav-button:hover {
+  border-bottom: 2px solid #2b71bb;
+  color: #2b71bb;
+}
+
+
+/* @media screen and (max-width: 500px) {
+#nav-button{
+  font-size: 10px;
+}
+
+} */
 
  
