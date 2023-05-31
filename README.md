@@ -4,6 +4,14 @@ It's messy, it's fun, It's how I learn
 
 View at: https://pink-jellyfish.surge.sh
 
+## Learnings
+To update the deployment with any changes (Run in Bash):
+- Run: ```npm run build``
+- Navigate into the build folder
+- Run: ```surge```
+- Press enter when prompted with the correct project folder
+- Enter the current domain ```pink-jellyfish.surge.sh``` and press enter
+
 ## Contents
 ### War Card Game
 __Description__
